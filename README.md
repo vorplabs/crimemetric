@@ -12,7 +12,7 @@ This repository holds the **Claude Code plugin** (the CrimeMetric connector plus
 | Where | How |
 |---|---|
 | **Claude** (web, desktop, mobile) | [Add to Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=CrimeMetric&connectorUrl=https%3A%2F%2Fapi.crimemetric.com%2Fconnect), then Connect and sign in |
-| **ChatGPT** | [chatgpt.com/plugins](https://chatgpt.com/plugins) > + > Add custom MCP server > `https://api.crimemetric.com/connect`, OAuth |
+| **ChatGPT** | [chatgpt.com/plugins](https://chatgpt.com/plugins) > Add > Add custom MCP server > `https://api.crimemetric.com/connect`, OAuth |
 | **Claude Code** | `claude plugin marketplace add vorplabs/crimemetric` then `claude plugin install crimemetric@crimemetric` |
 | **Cursor, VS Code, others** | Remote MCP server (streamable HTTP): `https://api.crimemetric.com/connect` |
 
