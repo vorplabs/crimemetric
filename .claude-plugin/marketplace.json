@@ -1,0 +1,12 @@
+{
+  "name": "crimemetric",
+  "owner": { "name": "Vorp Labs", "email": "support@vorplabs.com" },
+  "metadata": { "description": "CrimeMetric crime data for Claude Code: the connector and skills." },
+  "plugins": [
+    {
+      "name": "crimemetric",
+      "source": "./plugins/crimemetric",
+      "description": "Crime rates for any U.S. address, city or neighborhood, with skills for comparing places, scoring property lists, researching a move, listing facts and building with the API."
+    }
+  ]
+}

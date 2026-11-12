@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "crimemetric": {
+      "type": "http",
+      "url": "https://api.crimemetric.com/connect"
+    }
+  }
+}

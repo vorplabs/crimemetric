@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.crimemetric/crime-index",
+  "title": "CrimeMetric",
+  "description": "Crime rates for any U.S. address: block-group indexes, city profiles and incident records.",
+  "version": "2.0.0",
+  "websiteUrl": "https://crimemetric.com/api/connect",
+  "repository": { "url": "https://github.com/vorplabs/crimemetric", "source": "github" },
+  "icons": [
+    { "src": "https://crimemetric.com/icon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] }
+  ],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://api.crimemetric.com/connect" },
+    {
+      "type": "streamable-http",
+      "url": "https://api.crimemetric.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your API key> (free at https://api.crimemetric.com/signup). Optional: place search, place profiles, coverage and definitions work without one.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
