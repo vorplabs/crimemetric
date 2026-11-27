@@ -1,7 +1,7 @@
 {
   "name": "crimemetric",
-  "version": "1.0.0",
-  "description": "Crime rates for any U.S. address, city or neighborhood from CrimeMetric: modeled indexes with ranges and confidence, city profiles and police-published incident records. Sign in with your email; 10,000 free lookups a month.",
+  "version": "1.1.0",
+  "description": "Crime rates for any U.S. address, city or neighborhood from CrimeMetric: modeled indexes with ranges and confidence, city profiles and police-published incident records. Sign in with your email; 1,000 free lookups a month.",
   "author": {
     "name": "Vorp Labs",
     "email": "support@vorplabs.com",

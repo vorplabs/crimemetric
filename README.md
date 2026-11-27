@@ -16,9 +16,10 @@ This repository holds the **Claude Code plugin** (the CrimeMetric connector plus
 | **Claude Code** | `claude plugin marketplace add vorplabs/crimemetric` then `claude plugin install crimemetric@crimemetric` |
 | **Cursor, VS Code, others** | Remote MCP server (streamable HTTP): `https://api.crimemetric.com/connect` |
 
-You sign in with a 6-digit code sent to your email (or an existing API key). New accounts are free: 10,000 lookups
+You sign in with a 6-digit code sent to your email (or an existing API key). New accounts are free: 1,000 lookups
 a month. Clients that send a header instead of signing in can use `https://api.crimemetric.com/mcp` with
-`Authorization: Bearer <key>` ([get a key](https://api.crimemetric.com/signup)).
+`Authorization: Bearer <key>` ([get a key](https://api.crimemetric.com/signup)). Place search, city profiles,
+coverage and crime definitions work without a key.
 
 Full setup: [crimemetric.com/api/connect](https://crimemetric.com/api/connect).
 
@@ -28,10 +29,9 @@ Paste this into a new chat:
 
 ```
 I just connected the CrimeMetric connector. Please:
-1. Call CrimeMetric's account_status tool to see my plan and whether I've said what I use it for.
-2. If nothing is saved, ask me in one short message what I'm using crime data for (home listings, rental or investment properties, choosing where to live, research or reporting, building an app, or something else) and which cities or addresses I care about. Save my answer with save_profile, leaving out names and contact details.
-3. Run one example for a place I named. Lead with the national percentile, and give each index with its 80% range and confidence.
-4. Suggest two or three things I could ask next.
+1. Run one example lookup right away for a U.S. street address or city I name (or Austin, TX if I haven't named one yet): use crime_index for an address (lead with the national percentile, and give each index with its 80% range and confidence), or find_places then place_profile for a city (report the city indexes where 100 = U.S. rate, the 1-year change, and neighborhood spread).
+2. Call account_status to show my plan and remaining monthly lookups.
+3. Suggest two or three things I could ask next. If no profile is saved yet, briefly ask what I use crime data for and offer to save it with save_profile (leaving out names and contact details).
 ```
 
 ## Skills in the Claude Code plugin
